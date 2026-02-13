@@ -6,7 +6,7 @@ function BlogSection() {
       title: "Why Regular Blood Tests Are Important",
       desc: "Learn how routine blood tests help detect diseases early and improve overall health.",
       date: "Jan 15, 2026",
-      // IMPORTANT: Extension .jpeg check kar lena staff wali file ka
+    
       image: "/images/staff-working.jpg", 
     },
     {
@@ -30,7 +30,7 @@ function BlogSection() {
     >
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* Header */}
+      
         <div className="text-center mb-16 space-y-4">
           <span className="inline-block px-4 py-1.5 rounded-full border border-blue-500/20 bg-blue-500/5 text-blue-400 text-xs font-bold uppercase tracking-widest">
             Our Blog
@@ -43,14 +43,14 @@ function BlogSection() {
           </p>
         </div>
 
-        {/* Blog Grid */}
+        
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogs.map((blog, index) => (
             <div
               key={index}
               className="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-500 shadow-xl"
             >
-              {/* Image - Ab ye public folder se direct uthayega */}
+            
               <img
                 src={blog.image}
                 alt={blog.title}
