@@ -1,4 +1,6 @@
 import React from 'react';
+// 1. Image ko pehle import karein
+import AwardImage from "../assets/images/award-ceremony.jpg";
 
 function Hero() {
   return (
@@ -48,7 +50,7 @@ function Hero() {
               </button>
             </div>
 
-            {/* Bottom Metrics */}
+            {/* Metrics Section */}
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-slate-800/60 max-w-md">
               <div>
                 <span className="block text-2xl font-bold">150+</span>
@@ -68,17 +70,16 @@ function Hero() {
           {/* Right Column: Imagery */}
           <div className="hidden lg:block relative h-full">
             <div className="relative z-10 w-full h-[600px] rounded-[40px] overflow-hidden border border-slate-800 shadow-2xl">
+              {/* 2. src mein variable use karein */}
               <img
-                src="src/assets/images/WhatsApp Image 2026-01-28 at 21.57.41.jpeg" 
-                alt="High-end Laboratory Research Facility"
+                src={AwardImage} 
+                alt="Maha Luxmi Lab Award Ceremony"
                 className="w-full h-full object-cover object-center brightness-90 contrast-110"
               />
-              {/* Overlay Gradient for Image to blend into the UI */}
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
               <div className="absolute inset-0 bg-blue-600/5 mix-blend-overlay"></div>
             </div>
 
-            {/* Floating Experience Badge */}
             <div className="absolute -top-6 -right-6 bg-blue-600 p-8 rounded-2xl shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
                <p className="text-4xl font-black italic">25+</p>
                <p className="text-[10px] uppercase font-bold tracking-widest opacity-80">Years Excellence</p>
