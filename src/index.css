@@ -1,0 +1,6 @@
+@import "tailwindcss";
+html {
+    scroll-behavior: smooth;
+    /* Navbar ki height ke barabar gap chhodne ke liye */
+    scroll-padding-top: 70px; 
+  }
