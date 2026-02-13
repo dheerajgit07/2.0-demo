@@ -4,7 +4,7 @@ function Hero() {
   return (
     <section id='home' className="relative h-screen w-full bg-slate-950 text-white overflow-hidden flex items-center">
       
-      {/* Background Architectural Elements */}
+    
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 opacity-10" 
              style={{ backgroundImage: `radial-gradient(#3b82f6 0.5px, transparent 0.5px)`, backgroundSize: '32px 32px' }}>
@@ -16,7 +16,7 @@ function Hero() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           
-          {/* Left Column: Content */}
+        
           <div className="flex flex-col justify-center space-y-8 animate-in fade-in slide-in-from-left duration-1000">
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 bg-slate-900/50 border border-slate-800 px-4 py-1.5 rounded-full">
@@ -48,7 +48,7 @@ function Hero() {
               </button>
             </div>
 
-            {/* Metrics Section */}
+          
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-slate-800/60 max-w-md">
               <div>
                 <span className="block text-2xl font-bold">150+</span>
@@ -65,10 +65,10 @@ function Hero() {
             </div>
           </div>
 
-          {/* Right Column: Imagery */}
+      
           <div className="hidden lg:block relative h-full">
             <div className="relative z-10 w-full h-[600px] rounded-[40px] overflow-hidden border border-slate-800 shadow-2xl">
-              {/* VERCEL FIX: Direct path to public folder. No imports needed. */}
+            
               <img
                 src="/images/award-ceremony.jpg" 
                 alt="Maha Luxmi Lab Award Ceremony"
@@ -87,7 +87,7 @@ function Hero() {
         </div>
       </div>
 
-      {/* Modern Scroll Indicator */}
+      
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-30">
         <span className="text-[10px] uppercase tracking-[0.2em]">Explore</span>
         <div className="w-[1px] h-12 bg-gradient-to-b from-blue-500 to-transparent"></div>
