@@ -7,7 +7,7 @@ function BlogSection() {
       desc: "Learn how routine blood tests help detect diseases early and improve overall health.",
       date: "Jan 15, 2026",
       // IMPORTANT: Extension .jpeg check kar lena staff wali file ka
-      image: "/images/staff-working.jpeg", 
+      image: "/images/staff-working.jpg", 
     },
     {
       title: "5 Tips to Keep Your Heart Healthy",
