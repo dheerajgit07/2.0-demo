@@ -1,6 +1,4 @@
 import React from 'react';
-// 1. Image ko pehle import karein
-import AwardImage from "../assets/images/award-ceremony.jpg";
 
 function Hero() {
   return (
@@ -70,11 +68,12 @@ function Hero() {
           {/* Right Column: Imagery */}
           <div className="hidden lg:block relative h-full">
             <div className="relative z-10 w-full h-[600px] rounded-[40px] overflow-hidden border border-slate-800 shadow-2xl">
-              {/* 2. src mein variable use karein */}
+              {/* VERCEL FIX: Direct path to public folder. No imports needed. */}
               <img
-                src={AwardImage} 
+                src="/images/award-ceremony.jpg" 
                 alt="Maha Luxmi Lab Award Ceremony"
                 className="w-full h-full object-cover object-center brightness-90 contrast-110"
+                onError={(e) => { e.target.src = "https://via.placeholder.com/800x600?text=Award+Ceremony+Image"; }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
               <div className="absolute inset-0 bg-blue-600/5 mix-blend-overlay"></div>
